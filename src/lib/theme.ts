@@ -4,10 +4,11 @@ import { createTheme } from '@mui/system'
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6'
+      main: '#FFFFFF',
+      dark: '#000000'
     },
     secondary: {
-      main: '#19857b'
+      main: '#D4D4D4'
     }
   }
 })
