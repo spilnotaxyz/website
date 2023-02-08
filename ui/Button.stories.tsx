@@ -7,5 +7,11 @@ export default {
 } as Meta
 
 export const ButtonStory: Story<ButtonProps> = (args) => (
-  <Button {...args}>Twitter</Button>
+  <Button {...args}>ClickMe</Button>
+)
+
+export const ButtonLinkStory: Story<ButtonProps> = (args) => (
+  <Button link href="https://twitter.com" {...args}>
+    Twitter
+  </Button>
 )

@@ -2,14 +2,12 @@ import { useTheme } from '@mui/system'
 import { Button, ButtonProps } from './Button'
 import { Icon, IconProps } from './Icon'
 
-export type IconButtonProps = Omit<
-  ButtonProps &
-    Omit<IconProps, 'width' | 'height'> & {
-      iconWidth?: number
-      iconHeight?: number
-    },
-  'children'
->
+export type IconButtonProps = ButtonProps &
+  Omit<IconProps, 'width' | 'height'> & {
+    iconWidth?: number
+    iconHeight?: number
+    children?: never
+  }
 
 export const IconButton = ({
   name,

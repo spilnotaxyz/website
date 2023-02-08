@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 export type LinkProps = Omit<TextProps, 'variant'> & { href: string }
 
 export const Link = ({ href, ...rest }: LinkProps) => (
-  <NextLink href={href} style={{ textDecoration: 'none' }}>
+  <NextLink href={href} target="_blank" style={{ textDecoration: 'none' }}>
     <Text
       variant="body"
       sx={{
