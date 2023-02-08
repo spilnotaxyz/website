@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { Icon, IconProps } from './Icon'
+import { Icon, IconProps } from '@ui'
 
 export default {
   title: 'UI/Icon',
