@@ -1,4 +1,5 @@
 import { Box, BoxProps } from '@mui/system'
+import merge from 'lodash.merge'
 
 export type PaperProps = BoxProps & {
   borderGradientWidth?: number
@@ -14,23 +15,27 @@ export const Paper = ({
   <Box
     position="relative"
     borderRadius={borderRadius}
-    sx={{
-      // before
-      '&::before': {
-        content: '""',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        borderRadius,
-        border: `${borderGradientWidth}px solid transparent`,
-        background: `${borderGradient} border-box`,
-        '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`,
-        '-webkit-mask-composite': 'destination-out',
-        'mask-composite': 'exclude'
-      }
-    }}
     {...rest}
+    sx={merge(
+      {
+        // before
+        '&::before': {
+          zIndex: -9999,
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          borderRadius,
+          border: `${borderGradientWidth}px solid transparent`,
+          background: `${borderGradient} border-box`,
+          '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`,
+          '-webkit-mask-composite': 'destination-out',
+          'mask-composite': 'exclude'
+        }
+      },
+      rest.sx ?? {}
+    )}
   />
 )
