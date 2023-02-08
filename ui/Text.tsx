@@ -2,7 +2,6 @@ import { Box, BoxProps } from '@mui/system'
 
 export type TextProps = {
   variant: 'h1' | 'h2' | 'h3' | 'big' | 'bigger' | 'body' | 'smaller'
-  fontWeight: 300 | 400 | 500 | 600 | 700
 } & BoxProps
 
 const Base = (props: BoxProps) => {
