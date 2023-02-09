@@ -10,7 +10,13 @@ export type HeaderProps = Omit<HeaderUIProps, 'children'>
 
 export const Header = (props: HeaderProps) => (
   <HeaderUI
-    startAdorsement={<Icon name="logo" height={23} width={110} />}
+    startAdorsement={
+      // Link component breaks hydration
+      // eslint-disable-next-line @next/next/no-html-link-for-pages
+      <a href="/">
+        <Icon name="logo" height={23} width={110} />
+      </a>
+    }
     endAdorsement={
       <Button link href="https://twitter.com/spilnotaxyz">
         Twitter

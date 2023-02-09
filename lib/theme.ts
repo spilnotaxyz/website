@@ -9,7 +9,7 @@ export const theme = createTheme({
     },
     background: {
       default:
-        'linear-gradient(180deg, rgba(154, 154, 154, 0) -5.42%%, #68A1F6 40%, rgba(154, 154, 154, 0) 80%, #68A1F6 100%)'
+        'linear-gradient(180deg, #000000 15.44%, #68A1F6 40.15%, #000000 71.45%, #000000 87.92%, #68A1F6 100%)'
     },
     secondary: {
       main: '#D4D4D4'

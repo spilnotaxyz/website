@@ -8,7 +8,7 @@ export type FooterProps = FooterUIProps
 export const Footer = (props: FooterProps) => (
   <FooterUI
     startAdorsement={<Text variant="body">spilnota.xyz © 2023</Text>}
-    endAdorsement={<Link href="/">Privacy Policy</Link>}
+    endAdorsement={<Link href="/privacy">Privacy Policy</Link>}
     {...props}
   />
 )

@@ -20,6 +20,7 @@ const Plate = ({
 
 const PlateWithText = ({
   down,
+  component,
   children,
   ...rest
 }: BoxProps & { down?: boolean }) => (
@@ -37,7 +38,7 @@ const PlateWithText = ({
         })}
     {...rest}
   >
-    <Text maxWidth={400} variant="big" textAlign="center">
+    <Text maxWidth={400} variant="big" textAlign="center" component={component}>
       {children}
     </Text>
     <Plate down={down} />
@@ -54,7 +55,7 @@ export const Plates = (props: PlatesProps) => (
     }}
     {...props}
   >
-    <PlateWithText>
+    <PlateWithText component="h1">
       Creating tools for community-oriented startups to accelerate growth.
     </PlateWithText>
     <PlateWithText down ml="auto">

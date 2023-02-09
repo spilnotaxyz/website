@@ -18,12 +18,11 @@ const PassedPoint = ({
     justifyContent="center"
     alignItems="center"
     px={10}
-    minHeight={370}
+    height="100%"
     sx={{
-      background:
-        'linear-gradient(180deg, #68A1F6 0%, rgba(154, 154, 154, 0) 100%);'
+      background: 'linear-gradient(180deg, #000 20%, #68A1F6 100%);'
     }}
-    borderGradient="linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)"
+    borderGradient="linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%)"
     borderGradientWidth={1}
   >
     <Text variant="h3">{title}</Text>
@@ -34,22 +33,27 @@ const PassedPoint = ({
   </Paper>
 )
 
-const RoadPoint = ({ date, title }: { date: string; title: string }) => (
-  <Paper
-    display="flex"
-    justifyContent="center"
-    alignItems="center"
-    minHeight={370}
-    px={10}
-    borderGradient="linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)"
-    borderGradientWidth={1}
-  >
-    <Box position="absolute" top="25px" left="25px">
-      <Text variant="smaller">{date}</Text>
-    </Box>
-    <Text variant="h3">{title}</Text>
-  </Paper>
-)
+const RoadPoint = ({ date, title }: { date: string; title: string }) => {
+  return (
+    <Paper
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      px={10}
+      py="30%"
+      borderGradient="linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)"
+      borderGradientWidth={1}
+      sx={{
+        aspectRatio: '1 / 1'
+      }}
+    >
+      <Box position="absolute" top="25px" left="25px">
+        <Text variant="smaller">{date}</Text>
+      </Box>
+      <Text variant="h3">{title}</Text>
+    </Paper>
+  )
+}
 
 export const Products = (rest: ProductsProps) => (
   <Box {...rest}>
@@ -76,7 +80,7 @@ export const Products = (rest: ProductsProps) => (
         />
       </Grid>
       <Grid xs={3}>
-        <RoadPoint date="September 2023" title="RAM" />
+        <RoadPoint date="October 2023" title="RAM" />
       </Grid>
       <Grid xs={3}>
         <RoadPoint date="May 2023" title="RBA" />

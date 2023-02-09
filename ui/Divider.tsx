@@ -1,4 +1,5 @@
 import { Box, BoxProps } from '@mui/system'
+import merge from 'lodash.merge'
 
 export type DividerProps = BoxProps
 
@@ -10,10 +11,12 @@ export const Divider = (rest: DividerProps) => {
       height={0}
       width="100%"
       {...rest}
-      sx={{
-        borderStyle: 'solid',
-        ...(rest.sx ?? {})
-      }}
+      sx={merge(
+        {
+          borderStyle: 'solid'
+        },
+        rest.sx ?? {}
+      )}
     />
   )
 }

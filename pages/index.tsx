@@ -1,21 +1,11 @@
-import { Box, Container } from '@mui/system'
-import Link from 'next/link'
+import { Vision, Plates, Products } from '@views'
 
 export default function Home() {
   return (
-    <Container maxWidth="lg">
-      <Box
-        sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}
-      >
-        MUI v5 + Next.js with TypeScript example
-        <Link href="/about">Go to the about page</Link>
-      </Box>
-    </Container>
+    <>
+      <Vision mt={4.625} />
+      <Plates mt={12.5} />
+      <Products mt={12.5} />
+    </>
   )
 }
