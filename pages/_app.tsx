@@ -6,7 +6,9 @@ import { theme, createEmotionCache } from '@lib'
 import { PropsWithChildren } from 'react'
 import { Inter_Tight } from '@next/font/google'
 import { Footer, Header } from '@views'
-import { Divider } from '@ui'
+import { Divider, Text, TextProps } from '@ui'
+import { Box, BoxProps } from '@mui/system'
+import { MDXProvider } from '@mdx-js/react'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -55,6 +57,22 @@ export const inter = Inter_Tight({
   fallback: ['Helvetica', 'Arial', 'sans-serif']
 })
 
+type CutTextProps = Omit<TextProps, 'variant'>
+const components = {
+  h1: (props: CutTextProps) => <Text mt={3} variant="h1" {...props} />,
+  h2: (props: CutTextProps) => (
+    <Text mt={5} variant="h3" component="h2" {...props} />
+  ),
+  p: (props: CutTextProps) => <Text variant="body" {...props} />,
+  pre: (props: CutTextProps) => <Text variant="body" {...props} />,
+  a: (props: Omit<BoxProps, 'ref'>) => (
+    <Box component="a" color="inherit" {...props} />
+  ),
+  li: (props: CutTextProps) => (
+    <Text variant="smaller" component="li" {...props} />
+  )
+}
+
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
   return (
@@ -64,15 +82,17 @@ export default function MyApp(props: MyAppProps) {
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
-          <ComponentWrapper>
-            <Container maxWidth="lg">
-              <Header py={2.5} />
-              <Divider mb={4.5} />
-              <Component {...pageProps} />
-              <Divider mt={10} />
-              <Footer mb={1} py={3.75} />
-            </Container>
-          </ComponentWrapper>
+          <MDXProvider components={components}>
+            <ComponentWrapper>
+              <Container className={inter.className} maxWidth="lg">
+                <Header py={2.5} />
+                <Divider mb={4.5} />
+                <Component {...pageProps} />
+                <Divider mt={10} />
+                <Footer mb={1} py={3.75} />
+              </Container>
+            </ComponentWrapper>
+          </MDXProvider>
         </ThemeProvider>
       </CacheProvider>
     </>
