@@ -1,3 +1,20 @@
+# [1.3.0](https://github.com/spilnotaxyz/website/compare/v1.2.0...v1.3.0) (2023-02-09)
+
+
+### Bug Fixes
+
+* 🚑️ page rendering fix ([49e85b7](https://github.com/spilnotaxyz/website/commit/49e85b7168cc39dccf209a5251b87f93d536cebf))
+
+
+### Features
+
+* ✨ `/privacy` page ([141b4d8](https://github.com/spilnotaxyz/website/commit/141b4d8fc9085e4d625112f023781de3defa8f7a))
+* ✨ `Button`, `IconButton` and `Link` updates ([0e0dc8f](https://github.com/spilnotaxyz/website/commit/0e0dc8f57decc1f88c6c0f236c03477177cc0883))
+* ✨ `Divider`, `Footer`, `Header`, `Paper` components & stories ([1a75e72](https://github.com/spilnotaxyz/website/commit/1a75e72acdb7801b76c78234a8cc6e0b5ec8bc25))
+* ✨ `Paper`, `Text` updates ([bb0e0ca](https://github.com/spilnotaxyz/website/commit/bb0e0ca8cc9f2409350272e56cdaebb7af7b7ce0))
+* ✨ compose elements in the index page ([e5387e6](https://github.com/spilnotaxyz/website/commit/e5387e6c5e74a89369f7b5c2e9c9fa50b29245d1))
+* **views:** ✨ `Header`, `Footer` views and more ([6ddadfb](https://github.com/spilnotaxyz/website/commit/6ddadfb60a97d224aab9a16fa8417e19c7aec797))
+
 # [1.2.0](https://github.com/spilnotaxyz/website/compare/v1.1.0...v1.2.0) (2023-02-08)
 
 
