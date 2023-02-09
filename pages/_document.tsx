@@ -1,25 +1,25 @@
-import { Inter_Tight } from '@next/font/google'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 import { theme, createEmotionCache } from '@lib'
 
-export const inter = Inter_Tight({
-  weight: ['300', '400', '500', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif']
-})
-
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className={inter.className}>
+      <Html lang="en">
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
+          {/*Fonts*/}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="preload" href="/fonts/NeueMachina.css" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
