@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/spilnotaxyz/website/compare/v1.3.1...v1.3.2) (2023-02-09)
+
+
+### Bug Fixes
+
+* 🐛 products section smooth scroll from header ([6ee79ca](https://github.com/spilnotaxyz/website/commit/6ee79ca3e4528cad0597a372f44d18a98904772f))
+
 ## [1.3.1](https://github.com/spilnotaxyz/website/compare/v1.3.0...v1.3.1) (2023-02-09)
 
 
