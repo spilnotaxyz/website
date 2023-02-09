@@ -27,7 +27,21 @@ module.exports = withMDX({
         and: [/\.(js|ts)x?$/]
       },
 
-      use: ['@svgr/webpack']
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'removeViewBox',
+                  active: false
+                }
+              ]
+            }
+          }
+        }
+      ]
     })
 
     return config

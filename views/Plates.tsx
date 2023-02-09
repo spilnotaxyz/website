@@ -5,18 +5,30 @@ import merge from 'lodash.merge'
 const Plate = ({
   down,
   ...rest
-}: { down?: boolean } & Omit<IconProps, 'name'>) => (
-  <Icon
-    name="plate"
-    height={199}
-    width={642}
-    {...rest}
-    sx={merge(
-      { transform: down ? 'rotate(180deg)' : 'rotate(0deg)' },
-      rest.sx ?? {}
-    )}
-  />
-)
+}: { down?: boolean } & Omit<IconProps, 'name'>) => {
+  return (
+    <>
+      {[
+        { xs: 'none', md: 'block', xl: 'none', height: 105, width: 339 },
+        { xs: 'none', xl: 'block', height: 199, width: 642 },
+        { xs: 'block', md: 'none', height: 90, width: 200 }
+      ].map(({ height, width, ...display }, i) => (
+        <Icon
+          key={i}
+          name="plate"
+          display={display}
+          height={height}
+          width={width}
+          {...rest}
+          sx={merge(
+            { transform: down ? 'rotate(180deg)' : 'rotate(0deg)' },
+            rest.sx ?? {}
+          )}
+        />
+      ))}
+    </>
+  )
+}
 
 const PlateWithText = ({
   down,
@@ -31,10 +43,10 @@ const PlateWithText = ({
     width="min-content"
     {...(down
       ? {
-          mt: '-110px'
+          mt: { xs: '-50px', md: '-60px', xl: '-110px' }
         }
       : {
-          mb: '-110px'
+          mb: { xs: '-50px', md: '-60px', xl: '-110px' }
         })}
     {...rest}
   >
@@ -48,7 +60,8 @@ const PlateWithText = ({
 export type PlatesProps = PaperProps
 export const Plates = (props: PlatesProps) => (
   <Paper
-    p={13.875}
+    maxWidth={1340}
+    p={{ xs: 2.5, md: 8.5, xl: 13.875 }}
     sx={{
       background:
         'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%)'

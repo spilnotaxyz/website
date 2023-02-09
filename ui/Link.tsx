@@ -1,7 +1,8 @@
 import { Text, TextProps } from './Text'
 import NextLink from 'next/link'
+import merge from 'lodash.merge'
 
-export type LinkProps = Omit<TextProps, 'variant'> & {
+export type LinkProps = Partial<TextProps> & {
   href: string
 }
 
@@ -19,14 +20,17 @@ export const Link = ({ href, ...rest }: LinkProps) => {
     >
       <Text
         variant="body"
-        sx={{
-          '&:hover': {
-            color: 'secondary.main'
-          },
-          transition: 'all 0.1s ease-in-out',
-          cursor: 'pointer'
-        }}
         {...rest}
+        sx={merge(
+          {
+            '&:hover': {
+              color: 'secondary.main'
+            },
+            transition: 'all 0.1s ease-in-out',
+            cursor: 'pointer'
+          },
+          rest.sx ?? {}
+        )}
       />
     </NextLink>
   )
