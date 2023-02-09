@@ -57,15 +57,15 @@ const RoadPoint = ({ date, title }: { date: string; title: string }) => {
 
 export const Products = (rest: ProductsProps) => (
   <Box {...rest}>
-    <Box display="flex" justifyContent="center">
+    <Box id="products" display="flex" justifyContent="center">
       <Text display="inline" variant="h2" component="span">
-        {'[ '}
+        {'['}&nbsp;
       </Text>
       <Text display="inline" variant="h2">
         Our Products
       </Text>
       <Text display="inline" variant="h2" component="span">
-        {' ]'}
+        &nbsp;{']'}
       </Text>
     </Box>
     <Grid mt={7.5} container justifyContent="center" spacing={2.5}>

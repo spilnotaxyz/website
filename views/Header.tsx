@@ -24,7 +24,7 @@ export const Header = (props: HeaderProps) => (
     }
     {...props}
   >
-    <Link href="/">Products</Link>
+    <Link href="#products">Products</Link>
     <Link href="https://spilnota.notion.site/Introduction-to-Spilnota-4108c9f28b3741ebb46fc1308f3fcb87">
       About Us
     </Link>

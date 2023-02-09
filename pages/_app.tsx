@@ -23,6 +23,9 @@ const ComponentWrapper = ({ children }: PropsWithChildren) => {
     <>
       {/* @ts-ignore */}
       <style global jsx>{`
+        html {
+          scroll-behavior: smooth;
+        }
         body {
           background: ${theme.palette.background.default};
           font-family: 'Inter Tight', sans-serif;
