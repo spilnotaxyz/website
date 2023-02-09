@@ -30,11 +30,11 @@ export const Paper = ({
           borderRadius,
           border: `${borderGradientWidth}px solid transparent`,
           background: `${borderGradient} border-box`,
-          '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`,
-          '-webkit-mask-composite': 'destination-out',
-          'mask-composite': 'exclude'
+          WebkitMask: `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`,
+          WebkitMaskComposite: 'destination-out',
+          maskComposite: 'exclude'
         },
-        '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`
+        WebkitMask: `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`
       },
       rest.sx ?? {}
     )}

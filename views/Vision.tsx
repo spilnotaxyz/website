@@ -6,21 +6,24 @@ export type VisionProps = BoxProps
 export const Vision = (props: VisionProps) => (
   <Box
     display="flex"
+    flexDirection={{ xs: 'column', md: 'row' }}
     justifyContent="space-between"
-    alignItems="flex-end"
+    alignItems={{ xs: 'flex-start', md: 'flex-end' }}
     {...props}
   >
-    <Box maxWidth={613}>
+    <Box maxWidth={{ xs: 'auto', md: 613 }}>
       <Text component="span" variant="h1">
         {'[ '}
       </Text>
       <Text component="span" variant="h1" display="inline">
         Synergising ideas and{' '}
-        <Box component="span" ml="223px">
+        <Box component="span" ml={{ xs: 0, lg: '223px' }}>
           communities&nbsp;{']'}
         </Box>
       </Text>
     </Box>
-    <Text variant="bigger">Coming soon...</Text>
+    <Text mt={{ xs: 3.75, md: 0 }} variant="bigger">
+      Coming Soon...
+    </Text>
   </Box>
 )

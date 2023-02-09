@@ -6,7 +6,7 @@ import { theme, createEmotionCache } from '@lib'
 import { PropsWithChildren } from 'react'
 import { Inter_Tight } from '@next/font/google'
 import { Footer, Header } from '@views'
-import { Divider, Text } from '@ui'
+import { Text } from '@ui'
 import { Box } from '@mui/system'
 import { MDXProvider } from '@mdx-js/react'
 
@@ -79,11 +79,9 @@ export default function MyApp(props: MyAppProps) {
         <ThemeProvider theme={theme}>
           <MDXProvider components={components}>
             <ComponentWrapper>
-              <Container className={inter.className} maxWidth="lg">
+              <Container className={inter.className} maxWidth="xl">
                 <Header py={2.5} />
-                <Divider mb={4.5} />
                 <Component {...pageProps} />
-                <Divider mt={10} />
                 <Footer mb={1} py={3.75} />
               </Container>
             </ComponentWrapper>
