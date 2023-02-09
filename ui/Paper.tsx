@@ -33,7 +33,8 @@ export const Paper = ({
           '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`,
           '-webkit-mask-composite': 'destination-out',
           'mask-composite': 'exclude'
-        }
+        },
+        '-webkit-mask': `linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)`
       },
       rest.sx ?? {}
     )}

@@ -1,24 +1,11 @@
 import { Box, BoxProps } from '@mui/system'
-import merge from 'lodash.merge'
 
 export type TextProps = {
   variant: 'h1' | 'h2' | 'h3' | 'big' | 'bigger' | 'body' | 'smaller'
 } & BoxProps
 
 const Base = (props: BoxProps) => {
-  return (
-    <Box
-      color="primary.main"
-      {...props}
-      sx={merge(
-        {
-          marginBlockStart: 0,
-          marginBlockEnd: 0
-        },
-        props.sx ?? {}
-      )}
-    />
-  )
+  return <Box color="primary.main" {...props} />
 }
 
 export const Text = ({ variant, ...rest }: TextProps) => {

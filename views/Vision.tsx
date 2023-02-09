@@ -21,6 +21,6 @@ export const Vision = (props: VisionProps) => (
         </Box>
       </Text>
     </Box>
-    <Text variant="bigger">Building Organically</Text>
+    <Text variant="bigger">Coming soon...</Text>
   </Box>
 )
