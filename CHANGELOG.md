@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/spilnotaxyz/website/compare/v1.1.0...v1.2.0) (2023-02-08)
+
+
+### Features
+
+* ✨ support alias imports in `storybook` ([574f20d](https://github.com/spilnotaxyz/website/commit/574f20d628c6d3676cefc7acad7d111a7e1e7648))
+
 # [1.1.0](https://github.com/spilnotaxyz/website/compare/v1.0.1...v1.1.0) (2023-02-08)
 
 
