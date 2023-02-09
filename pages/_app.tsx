@@ -6,8 +6,8 @@ import { theme, createEmotionCache } from '@lib'
 import { PropsWithChildren } from 'react'
 import { Inter_Tight } from '@next/font/google'
 import { Footer, Header } from '@views'
-import { Divider, Text, TextProps } from '@ui'
-import { Box, BoxProps } from '@mui/system'
+import { Divider, Text } from '@ui'
+import { Box } from '@mui/system'
 import { MDXProvider } from '@mdx-js/react'
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -51,26 +51,18 @@ const ComponentWrapper = ({ children }: PropsWithChildren) => {
 }
 
 export const inter = Inter_Tight({
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif']
+  fallback: ['sans-serif']
 })
 
-type CutTextProps = Omit<TextProps, 'variant'>
 const components = {
-  h1: (props: CutTextProps) => <Text mt={3} variant="h1" {...props} />,
-  h2: (props: CutTextProps) => (
-    <Text mt={5} variant="h3" component="h2" {...props} />
-  ),
-  p: (props: CutTextProps) => <Text variant="body" {...props} />,
-  pre: (props: CutTextProps) => <Text variant="body" {...props} />,
-  a: (props: Omit<BoxProps, 'ref'>) => (
-    <Box component="a" color="inherit" {...props} />
-  ),
-  li: (props: CutTextProps) => (
-    <Text variant="smaller" component="li" {...props} />
-  )
+  h1: (props: any) => <Text mt={3} variant="h1" {...props} />,
+  h2: (props: any) => <Text mt={5} variant="h3" component="h2" {...props} />,
+  p: (props: any) => <Text variant="body" {...props} />,
+  pre: (props: any) => <Text variant="body" {...props} />,
+  a: (props: any) => <Box component="a" color="inherit" {...props} />,
+  li: (props: any) => <Text variant="smaller" component="li" {...props} />
 }
 
 export default function MyApp(props: MyAppProps) {
