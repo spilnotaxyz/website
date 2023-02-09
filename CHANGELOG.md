@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/spilnotaxyz/website/compare/v1.3.0...v1.3.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* 🚑️ build fix ([9474fdc](https://github.com/spilnotaxyz/website/commit/9474fdc2bcc511e7b76766339d7b9a66024b3dbe))
+
 # [1.3.0](https://github.com/spilnotaxyz/website/compare/v1.2.0...v1.3.0) (2023-02-09)
 
 
