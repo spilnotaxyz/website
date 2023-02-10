@@ -7,7 +7,7 @@ export type LinkProps = Partial<TextProps> & {
 }
 
 export const Link = ({ href, ...rest }: LinkProps) => {
-  const startsWithHash = href.startsWith('#')
+  const startsWithHash = href.startsWith('#') || href.startsWith('/')
   return (
     <NextLink
       href={href}

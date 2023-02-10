@@ -67,7 +67,7 @@ export default function MyApp(props: MyAppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <title>Spilnota - Synergising ideas & communities</title>
         <meta
           name="title"
