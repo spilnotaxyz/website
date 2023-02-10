@@ -2,9 +2,8 @@ import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { Container, ThemeProvider, useTheme } from '@mui/system'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import { theme, createEmotionCache } from '@lib'
+import { theme, createEmotionCache, inter } from '@lib'
 import { PropsWithChildren } from 'react'
-import { Inter_Tight } from '@next/font/google'
 import { Footer, Header } from '@views'
 import { Text } from '@ui'
 import { Box } from '@mui/system'
@@ -54,12 +53,6 @@ const ComponentWrapper = ({ children }: PropsWithChildren) => {
   )
 }
 
-export const inter = Inter_Tight({
-  weight: ['400'],
-  subsets: ['latin'],
-  fallback: ['sans-serif']
-})
-
 const components = {
   h1: (props: any) => <Text mt={3} variant="h1" {...props} />,
   h2: (props: any) => <Text mt={5} variant="h3" component="h2" {...props} />,
@@ -73,46 +66,48 @@ export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
   return (
     <>
-      <link rel="shortcut icon" href="/favicon.svg" />
-      <title>Synergising ideas & communities | spilnota.xyz</title>
-      <meta
-        name="title"
-        content="Synergising ideas & communities | spilnota.xyz"
-      />
-      <meta
-        name="description"
-        content="A Growth platform for community-oriented startups, soon..."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://spilnota.xyz/" />
-      <meta
-        property="og:title"
-        content="Synergising ideas & communities | spilnota.xyz"
-      />
-      {/* <meta
+      <Head>
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <title>Spilnota - Synergising ideas & communities</title>
+        <meta
+          name="title"
+          content="Spilnota - Synergising ideas & communities"
+        />
+        <meta
+          name="description"
+          content="A Growth platform for community-oriented startups, soon..."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://spilnota.xyz/" />
+        <meta
+          property="og:title"
+          content="Spilnota - Synergising ideas & communities"
+        />
+        {/* <meta
         property="og:image"
         content="https://spilnota.xyz/meta_image.png"
       /> */}
-      <meta
-        property="og:description"
-        content="A Growth platform for community-oriented startups, soon..."
-      />
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://spilnota.xyz/" />
-      <meta
-        property="twitter:title"
-        content="Synergising ideas & communities | spilnota.xyz"
-      />
-      <meta
-        property="twitter:description"
-        content="A Growth platform for community-oriented startups, soon..."
-      />
-      {/* <meta
+        <meta
+          property="og:description"
+          content="A Growth platform for community-oriented startups, soon..."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://spilnota.xyz/" />
+        <meta
+          property="twitter:title"
+          content="Spilnota - Synergising ideas & communities"
+        />
+        <meta
+          property="twitter:description"
+          content="A Growth platform for community-oriented startups, soon..."
+        />
+        {/* <meta
         property="twitter:image"
         content="https://spilnota.xyz/meta_image.png"
       /> */}
-      <meta name="twitter:creator" content="@spilnotaxyz" />
-      <meta name="twitter:site" content="@spilnotaxyz" />
+        <meta name="twitter:creator" content="@spilnotaxyz" />
+        <meta name="twitter:site" content="@spilnotaxyz" />
+      </Head>
       <CacheProvider value={emotionCache}>
         <Head>
           <meta name="viewport" content="initial-scale=1, width=device-width" />

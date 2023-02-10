@@ -1,5 +1,6 @@
 import { Box, BoxProps, Unstable_Grid as Grid, useTheme } from '@mui/system'
 import { IconButton, Paper, PaperProps, Text } from '@ui'
+import merge from 'lodash.merge'
 
 export type ProductsProps = BoxProps
 
@@ -20,12 +21,15 @@ const PassedPoint = ({
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      sx={{
-        background: theme.palette.gradients.primary
-      }}
       borderGradient={theme.palette.gradients.border}
       borderGradientWidth={1}
       {...rest}
+      sx={merge(
+        {
+          background: theme.palette.gradients.primary
+        },
+        rest.sx ?? {}
+      )}
     >
       <Text variant="h3">{title}</Text>
       <Text mt={1.25} variant="bigger">
@@ -70,10 +74,14 @@ export const Products = (rest: ProductsProps) => (
     <Grid mt={7.5} container spacing={2.5} justifyContent="center">
       <Grid order={{ lg: 1 }} xs={12} lg={6}>
         <PassedPoint
-          py={8.5}
           title="Every Action Counts"
           description="NFTing Card"
           link="https://nfting.spilnota.xyz"
+          py={[0, 0, 8.5, 0]}
+          height={{ lg: '100%' }}
+          sx={{
+            aspectRatio: { xs: '1 / 1', md: 'auto' }
+          }}
         />
       </Grid>
       <Grid order={{ lg: 0 }} xs={12} md={6} lg={3}>

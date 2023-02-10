@@ -1,4 +1,5 @@
 import { Box, BoxProps } from '@mui/system'
+import { neueMachina } from '@lib'
 
 export type TextProps = {
   variant: 'h1' | 'h2' | 'h3' | 'big' | 'bigger' | 'body' | 'smaller'
@@ -10,29 +11,15 @@ const Base = (props: BoxProps) => {
 
 export const Text = ({ variant, ...rest }: TextProps) => {
   if (variant === 'h1')
-    return (
-      <Base
-        component="h1"
-        fontSize={{ xs: 45, md: 90 }}
-        fontFamily="Inter Tight"
-        {...rest}
-      />
-    )
+    return <Base component="h1" fontSize={{ xs: 45, md: 90 }} {...rest} />
   if (variant === 'h2')
-    return (
-      <Base
-        component="h2"
-        fontSize={{ xs: 30, md: 70 }}
-        fontFamily="Inter Tight"
-        {...rest}
-      />
-    )
+    return <Base component="h2" fontSize={{ xs: 30, md: 70 }} {...rest} />
   if (variant === 'h3')
     return (
       <Base
         component="h3"
+        className={neueMachina.className}
         fontSize={{ xs: 22, md: 32 }}
-        fontFamily="Neue Machina"
         fontWeight={400}
         {...rest}
       />

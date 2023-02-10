@@ -74,7 +74,11 @@ export const Header = ({
           m="auto"
         >
           {Children.map(children, (child) => (
-            <Box display={{ xs: 'block', md: 'none' }} py={2.5}>
+            <Box
+              display={{ xs: 'block', md: 'none' }}
+              onClick={() => setIsOpened(false)}
+              py={2.5}
+            >
               {child}
             </Box>
           ))}

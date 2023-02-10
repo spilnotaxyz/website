@@ -57,6 +57,13 @@ export const parameters = {
       large: {
         name: 'Large',
         styles: {
+          width: '960px',
+          height: '768px',
+        },
+      },
+      extraLarge: {
+        name: 'Extra Large',
+        styles: {
           width: '1440px',
           height: '900px',
         },

@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           {/*Fonts*/}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link rel="preload" href="/fonts/NeueMachina.css" />
+          <link rel="preload" href="/fonts/NeueMachina.css" as="style" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap"
             rel="stylesheet"
