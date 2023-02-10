@@ -7,7 +7,7 @@ export default {
   component: Divider
 } as Meta
 
-export const DividerStory: Story<DividerProps> = (args) => (
+export const DividerStory: Story<DividerProps> = () => (
   <Box
     width="100%"
     height={100}
@@ -15,6 +15,6 @@ export const DividerStory: Story<DividerProps> = (args) => (
     justifyContent="center"
     alignItems="center"
   >
-    <Divider {...args} />
+    <Divider />
   </Box>
 )

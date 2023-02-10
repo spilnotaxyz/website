@@ -1,17 +1,15 @@
 import { Story, Meta } from '@storybook/react'
-import { Button, ButtonProps } from './Button'
+import { Button, ButtonProps } from '@ui'
 
 export default {
   title: 'UI/Button',
   component: Button
 } as Meta
 
-export const ButtonStory: Story<ButtonProps> = (args) => (
-  <Button {...args}>ClickMe</Button>
-)
+export const ButtonStory: Story<ButtonProps> = () => <Button>ClickMe</Button>
 
-export const ButtonLinkStory: Story<ButtonProps> = (args) => (
-  <Button link href="https://twitter.com" {...args}>
+export const ButtonLinkStory: Story<ButtonProps> = () => (
+  <Button link href="https://twitter.com">
     Twitter
   </Button>
 )
