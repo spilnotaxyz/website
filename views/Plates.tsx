@@ -9,13 +9,32 @@ const Plate = ({
   return (
     <>
       {[
-        { xs: 'none', md: 'block', xl: 'none', height: 105, width: 339 },
-        { xs: 'none', xl: 'block', height: 199, width: 642 },
-        { xs: 'block', md: 'none', height: 90, width: 200 }
-      ].map(({ height, width, ...display }, i) => (
+        {
+          xs: 'none',
+          md: 'block',
+          xl: 'none',
+          height: 105,
+          width: 339,
+          name: 'plate' as const
+        },
+        {
+          xs: 'none',
+          xl: 'block',
+          height: 199,
+          width: 642,
+          name: 'plate' as const
+        },
+        {
+          xs: 'block',
+          md: 'none',
+          height: 90,
+          width: 200,
+          name: 'plateXs' as const
+        }
+      ].map(({ height, width, name, ...display }, i) => (
         <Icon
           key={i}
-          name="plate"
+          name={name}
           display={display}
           height={height}
           width={width}
@@ -41,13 +60,6 @@ const PlateWithText = ({
     flexDirection={down ? 'column-reverse' : 'column'}
     alignItems="center"
     width="min-content"
-    {...(down
-      ? {
-          mt: { xs: '-50px', md: '-60px', xl: '-110px' }
-        }
-      : {
-          mb: { xs: '-50px', md: '-60px', xl: '-110px' }
-        })}
     {...rest}
   >
     <Text maxWidth={400} variant="big" textAlign="center" component={component}>
@@ -62,16 +74,26 @@ export const Plates = (props: PlatesProps) => (
   <Paper
     maxWidth={1340}
     p={{ xs: 2.5, md: 8.5, xl: 13.875 }}
+    display="flex"
+    justifyContent="center"
     sx={{
       background:
         'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%)'
     }}
     {...props}
   >
-    <PlateWithText component="h1">
+    <PlateWithText
+      component="h1"
+      mb={{ xs: '148px', md: '134px', xl: '150px' }}
+      mr={{ xs: '-40px', md: '-40px', xl: '-80px' }}
+    >
       Creating tools for community-oriented startups to accelerate growth.
     </PlateWithText>
-    <PlateWithText down ml="auto">
+    <PlateWithText
+      down
+      mt={{ xs: '148px', md: '134px', xl: '150px' }}
+      ml={{ xs: '-40px', md: '-40px', xl: '-80px' }}
+    >
       A safe, fair, and transparent place for Web3 enthusiasts to stick around
     </PlateWithText>
   </Paper>
