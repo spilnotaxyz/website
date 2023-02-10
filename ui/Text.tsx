@@ -1,5 +1,5 @@
 import { Box, BoxProps } from '@mui/system'
-import { neueMachina } from '@lib'
+import { neueMachina, inter } from '@lib/fonts'
 
 export type TextProps = {
   variant: 'h1' | 'h2' | 'h3' | 'big' | 'bigger' | 'body' | 'smaller'
@@ -29,6 +29,7 @@ export const Text = ({ variant, ...rest }: TextProps) => {
     return (
       <Base
         component="p"
+        className={inter.className}
         fontSize={{ xs: 18, md: 24 }}
         fontFamily="Inter Tight"
         {...rest}
@@ -38,6 +39,7 @@ export const Text = ({ variant, ...rest }: TextProps) => {
     return (
       <Base
         component="p"
+        className={inter.className}
         fontSize={{ xs: 14, md: 18 }}
         fontFamily="Inter Tight"
         {...rest}
@@ -48,6 +50,7 @@ export const Text = ({ variant, ...rest }: TextProps) => {
     return (
       <Base
         component="p"
+        className={inter.className}
         fontSize={{ xs: 12, md: 16 }}
         fontFamily="Inter Tight"
         {...rest}
@@ -57,6 +60,7 @@ export const Text = ({ variant, ...rest }: TextProps) => {
     return (
       <Base
         component="p"
+        className={inter.className}
         fontSize={{ xs: 12, md: 14 }}
         fontFamily="Inter Tight"
         {...rest}

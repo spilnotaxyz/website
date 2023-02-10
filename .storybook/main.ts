@@ -1,5 +1,4 @@
 // const path = require("path");
-import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 import { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
@@ -26,6 +25,7 @@ const config: StorybookConfig = {
     if(fileLoaderRule)
     (fileLoaderRule as any).exclude = /\.svg$/; 
 
+    // svgs
     config.module?.rules?.push({
       test: /\.svg$/,
       issuer: {
@@ -42,9 +42,6 @@ const config: StorybookConfig = {
            }
         }}],
     })
-
-    if (config.resolve)
-    config.resolve.plugins = [new TsconfigPathsPlugin({ extensions: config.resolve.extensions }) as any]
 
     return config
   }
