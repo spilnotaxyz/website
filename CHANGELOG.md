@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/spilnotaxyz/website/compare/v1.3.2...v1.4.0) (2023-02-10)
+
+
+### Features
+
+* 📱 respoooonsiveneees ([aaa06a4](https://github.com/spilnotaxyz/website/commit/aaa06a4f379227820db194d91c2ae1864eb9304f))
+
 ## [1.3.2](https://github.com/spilnotaxyz/website/compare/v1.3.1...v1.3.2) (2023-02-09)
 
 
