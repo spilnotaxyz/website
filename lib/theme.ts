@@ -17,7 +17,7 @@ export const theme = createTheme({
     gradients: {
       primary: 'linear-gradient(180deg, #000 20%, #303c5c 100%)',
       border:
-        'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%)'
+        'linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)'
     }
   },
   breakpoints: {

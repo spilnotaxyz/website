@@ -26,7 +26,8 @@ const PassedPoint = ({
       {...rest}
       sx={merge(
         {
-          background: theme.palette.gradients.primary
+          background: theme.palette.gradients.primary,
+          aspectRatio: { xs: '1 / 1', md: 'auto' }
         },
         rest.sx ?? {}
       )}
@@ -40,23 +41,34 @@ const PassedPoint = ({
   )
 }
 
-const RoadPoint = ({ date, title }: { date: string; title: string }) => (
-  <Paper
-    display="flex"
-    justifyContent="center"
-    alignItems="center"
-    borderGradient="linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)"
-    borderGradientWidth={1}
-    sx={{
-      aspectRatio: '1 / 1'
-    }}
-  >
-    <Box position="absolute" top="25px" left="25px">
-      <Text variant="smaller">{date}</Text>
-    </Box>
-    <Text variant="h3">{title}</Text>
-  </Paper>
-)
+const RoadPoint = ({
+  date,
+  title,
+  ...rest
+}: { date: string; title: string } & PaperProps) => {
+  const theme = useTheme()
+  return (
+    <Paper
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      borderGradient={theme.palette.gradients.border}
+      borderGradientWidth={1}
+      {...rest}
+      sx={merge(
+        {
+          aspectRatio: '1 / 1'
+        },
+        rest.sx ?? {}
+      )}
+    >
+      <Box position="absolute" top="25px" left="25px">
+        <Text variant="smaller">{date}</Text>
+      </Box>
+      <Text variant="h3">{title}</Text>
+    </Paper>
+  )
+}
 
 export const Products = (rest: ProductsProps) => (
   <Box {...rest}>
@@ -79,9 +91,6 @@ export const Products = (rest: ProductsProps) => (
           link="https://nfting.spilnota.xyz"
           py={[0, 0, 8.5, 0]}
           height={{ lg: '100%' }}
-          sx={{
-            aspectRatio: { xs: '1 / 1', md: 'auto' }
-          }}
         />
       </Grid>
       <Grid order={{ lg: 0 }} xs={12} md={6} lg={3}>
