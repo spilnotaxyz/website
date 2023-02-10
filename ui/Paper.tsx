@@ -9,7 +9,7 @@ export type PaperProps = BoxProps & {
 export const Paper = ({
   borderGradientWidth,
   borderGradient,
-  borderRadius = 7.5,
+  borderRadius = { xs: 3.75, xl: 7.5 },
   ...rest
 }: PaperProps) => (
   <Box
