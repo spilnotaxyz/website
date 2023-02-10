@@ -23,19 +23,6 @@ export const withMuiTheme = (Story) =>  (
         padding-inline-end: 0;
       }
       `}
-      </style> 
-      {/** The next is a hack and should be dropped when @storybook/next 
-       * handles fonts correctly. See https://github.com/storybookjs/storybook/issues/19711
-       */}
-      <style global jsx>{`
-      body {
-        font-family: 'Inter Tight', sans-serif;
-      }
-
-      h3 {
-        font-family: 'NeueMachina', sans-serif !important;
-      }
-      `}
     </style>
     <Story />
   </ThemeProvider>

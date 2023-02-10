@@ -1,4 +1,3 @@
-// const path = require("path");
 import { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
@@ -18,7 +17,12 @@ const config: StorybookConfig = {
   core: {
     "builder": "@storybook/builder-webpack5"
   },
-  staticDirs: ['../public'],
+  staticDirs: [
+    {
+      from: '../public',
+      to: 'public'
+    }
+  ],
   webpackFinal: async (config) => {
     const fileLoaderRule = config.module?.rules?.find((rule: any) => rule?.test && rule.test?.test('.svg'))
 
