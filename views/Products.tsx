@@ -83,7 +83,12 @@ export const Products = (rest: ProductsProps) => (
         &nbsp;{']'}
       </Text>
     </Box>
-    <Grid mt={[3.75, 7.5]} container spacing={2.5} justifyContent="center">
+    <Grid
+      mt={{ xs: 3.75, md: 7.5 }}
+      container
+      spacing={2.5}
+      justifyContent="center"
+    >
       <Grid order={{ lg: 1 }} xs={12} lg={6}>
         <PassedPoint
           title="Every Action Counts"
