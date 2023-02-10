@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/spilnotaxyz/website/compare/v1.5.4...v1.5.5) (2023-02-10)
+
+
+### Bug Fixes
+
+* 🚑️ `/privacy` bad rendering fix ([7a0eaac](https://github.com/spilnotaxyz/website/commit/7a0eaaca449cf4da9243ebf04538614b900bcd1f))
+
 ## [1.5.4](https://github.com/spilnotaxyz/website/compare/v1.5.3...v1.5.4) (2023-02-10)
 
 
