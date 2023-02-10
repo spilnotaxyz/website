@@ -73,7 +73,7 @@ export const Products = (rest: ProductsProps) => (
           py={8.5}
           title="Every Action Counts"
           description="NFTing Card"
-          link="https://eve.spilnota.xyz"
+          link="https://nfting.spilnota.xyz"
         />
       </Grid>
       <Grid order={{ lg: 0 }} xs={12} md={6} lg={3}>
