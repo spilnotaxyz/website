@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/spilnotaxyz/website/compare/v1.5.3...v1.5.4) (2023-02-10)
+
+
+### Bug Fixes
+
+* **storybook:** 🩹 hotfix introduced by 84c591e => good fix ([e41670b](https://github.com/spilnotaxyz/website/commit/e41670b3efc1a0839c0acd454985f6468a1e9167)), closes [/github.com/storybookjs/storybook/issues/19711#issuecomment-1425887280](https://github.com//github.com/storybookjs/storybook/issues/19711/issues/issuecomment-1425887280)
+
 ## [1.5.3](https://github.com/spilnotaxyz/website/compare/v1.5.2...v1.5.3) (2023-02-10)
 
 
