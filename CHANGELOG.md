@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/spilnotaxyz/website/compare/v1.5.0...v1.5.1) (2023-02-10)
+
+
+### Bug Fixes
+
+* 🐛 font import fix, product blocks and meta tags ([023b856](https://github.com/spilnotaxyz/website/commit/023b8565947a790e49ba1e3d59b4c9d846f6b15e))
+* 🩹 fix the product url ([2df39bc](https://github.com/spilnotaxyz/website/commit/2df39bc3571d1b34eea0df77a1742de0a68faccf))
+
 # [1.5.0](https://github.com/spilnotaxyz/website/compare/v1.4.0...v1.5.0) (2023-02-10)
 
 
