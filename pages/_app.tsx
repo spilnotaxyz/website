@@ -9,6 +9,7 @@ import { Footer, Header } from '@views'
 import { Text } from '@ui'
 import { Box } from '@mui/system'
 import { MDXProvider } from '@mdx-js/react'
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -72,11 +73,52 @@ export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
   return (
     <>
+      <link rel="shortcut icon" href="/favicon.svg" />
+      <title>Synergising ideas & communities | spilnota.xyz</title>
+      <meta
+        name="title"
+        content="Synergising ideas & communities | spilnota.xyz"
+      />
+      <meta
+        name="description"
+        content="A Growth platform for community-oriented startups, soon..."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://spilnota.xyz/" />
+      <meta
+        property="og:title"
+        content="Synergising ideas & communities | spilnota.xyz"
+      />
+      {/* <meta
+        property="og:image"
+        content="https://spilnota.xyz/meta_image.png"
+      /> */}
+      <meta
+        property="og:description"
+        content="A Growth platform for community-oriented startups, soon..."
+      />
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://spilnota.xyz/" />
+      <meta
+        property="twitter:title"
+        content="Synergising ideas & communities | spilnota.xyz"
+      />
+      <meta
+        property="twitter:description"
+        content="A Growth platform for community-oriented startups, soon..."
+      />
+      {/* <meta
+        property="twitter:image"
+        content="https://spilnota.xyz/meta_image.png"
+      /> */}
+      <meta name="twitter:creator" content="@spilnotaxyz" />
+      <meta name="twitter:site" content="@spilnotaxyz" />
       <CacheProvider value={emotionCache}>
         <Head>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
+          <GoogleAnalytics trackPageViews />
           <MDXProvider components={components}>
             <ComponentWrapper>
               <Container className={inter.className} maxWidth="xl">
