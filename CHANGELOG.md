@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/spilnotaxyz/website/compare/v1.4.0...v1.5.0) (2023-02-10)
+
+
+### Features
+
+* ✨ meta tags ([1b1fa6c](https://github.com/spilnotaxyz/website/commit/1b1fa6cd3672740169ff2476d6f07c77523ddb1f))
+
 # [1.4.0](https://github.com/spilnotaxyz/website/compare/v1.3.2...v1.4.0) (2023-02-10)
 
 
