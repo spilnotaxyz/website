@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/spilnotaxyz/website/compare/v1.5.2...v1.5.3) (2023-02-10)
+
+
+### Bug Fixes
+
+* **storybook:** 🐛 font import fix ([84c591e](https://github.com/spilnotaxyz/website/commit/84c591e2a698891e9ec18dd87e5a0611ea34ec69))
+
 ## [1.5.2](https://github.com/spilnotaxyz/website/compare/v1.5.1...v1.5.2) (2023-02-10)
 
 
