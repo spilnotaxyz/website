@@ -1,6 +1,7 @@
-name: Epic
-description: "Create an Epic"
-labels: "epic :notebook:"
+name: "Feature Request"
+title: "As a user, I want to ..."
+description: "Create a Feature Request"
+labels: ["feature ✨️", "needs refinement ♻️"]
 body:
   - type: textarea
     id: abstract
@@ -21,6 +22,25 @@ body:
       label: "Motivation:"
       placeholder: |
         (Why?) The cookies are needed to make a cake and users love cookies.
+
+  - type: textarea
+    id: specification
+    attributes:
+      label: "Specification:"
+      placeholder: |
+        (How?) We need the spoon, the spoon is placed on the desk with cookie
+        forms prepared, milk is took from a refridgirator...
+
+
+  - type: textarea
+    id: criteria
+    attributes:
+      label: "Acceptance Criteria:"
+      placeholder: |
+        - [ ] You have the cookie
+        - [ ] The cookie has the chocolate
+    validations:
+      required: true
 
   - type: textarea
     id: references
