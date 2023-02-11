@@ -1,5 +1,6 @@
 import { Box, BoxProps } from '@mui/system'
-import { Text } from '@ui'
+
+import { Text } from '~ui'
 
 export type VisionProps = BoxProps
 

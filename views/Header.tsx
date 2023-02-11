@@ -1,11 +1,12 @@
 import {
   Button,
+  Header as HeaderUI,
+  HeaderProps as HeaderUIProps,
   Icon,
   Link as LinkUI,
-  LinkProps as LinkPropsUI,
-  Header as HeaderUI,
-  HeaderProps as HeaderUIProps
-} from '@ui'
+  LinkProps as LinkPropsUI
+} from '~ui'
+
 export type HeaderProps = Omit<HeaderUIProps, 'children'>
 
 const Link = (props: LinkPropsUI) => {

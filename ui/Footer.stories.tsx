@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
-import { Story, Meta } from '@storybook/react'
-import { Text, Link, Footer, FooterProps } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { Footer, FooterProps, Link, Text } from '~ui'
 
 export default {
   title: 'ui/Footer',

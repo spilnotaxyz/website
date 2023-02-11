@@ -1,5 +1,6 @@
-import { Story, Meta } from '@storybook/react'
-import { Text, TextProps } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { Text, TextProps } from '~ui'
 
 export default {
   title: 'UI/Text',

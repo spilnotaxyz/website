@@ -3,7 +3,8 @@ import {
   FooterProps as FooterUIProps,
   Link,
   Text
-} from '@ui'
+} from '~ui'
+
 export type FooterProps = FooterUIProps
 export const Footer = (props: FooterProps) => (
   <FooterUI

@@ -1,5 +1,6 @@
-import { Story, Meta } from '@storybook/react'
-import { Link, LinkProps } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { Link, LinkProps } from '~ui'
 
 export default {
   title: 'UI/Link',

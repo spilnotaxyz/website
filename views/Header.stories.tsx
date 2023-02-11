@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
-import { Story, Meta } from '@storybook/react'
-import { Header, HeaderProps } from '@views'
+import { Meta, Story } from '@storybook/react'
+
+import { Header, HeaderProps } from '~views'
 
 export default {
   title: 'views/Header',

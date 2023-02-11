@@ -1,6 +1,7 @@
 import { Box, BoxProps, Unstable_Grid as Grid, useTheme } from '@mui/system'
-import { IconButton, Paper, PaperProps, Text } from '@ui'
 import merge from 'lodash.merge'
+
+import { IconButton, Paper, PaperProps, Text } from '~ui'
 
 export type ProductsProps = BoxProps
 

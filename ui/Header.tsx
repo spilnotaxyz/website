@@ -1,6 +1,7 @@
 import { Box, BoxProps } from '@mui/system'
-import { Divider, IconButton } from '@ui'
-import { PropsWithChildren, ReactNode, Children, useState } from 'react'
+import { Children, PropsWithChildren, ReactNode, useState } from 'react'
+
+import { Divider, IconButton } from '~ui'
 
 export type HeaderProps = PropsWithChildren<{
   startAdorsement?: ReactNode

@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
-import { Divider, HeaderProps } from '@ui'
 import { Children } from 'react'
+
+import { Divider, HeaderProps } from '~ui'
 
 export type FooterProps = HeaderProps
 

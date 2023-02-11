@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
-import { Story, Meta } from '@storybook/react'
-import { Divider, DividerProps } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { Divider, DividerProps } from '~ui'
 
 export default {
   title: 'ui/Divider',

@@ -1,4 +1,4 @@
-import { Vision, Plates, Products } from '@views'
+import { Plates, Products, Vision } from '~views'
 
 export default function Home() {
   return (

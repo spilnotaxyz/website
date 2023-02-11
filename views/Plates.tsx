@@ -1,6 +1,7 @@
 import { Box, BoxProps } from '@mui/system'
-import { Paper, PaperProps, Icon, IconProps, Text } from '@ui'
 import merge from 'lodash.merge'
+
+import { Icon, IconProps, Paper, PaperProps, Text } from '~ui'
 
 const Plate = ({
   down,

@@ -1,5 +1,6 @@
-import { Story, Meta } from '@storybook/react'
-import { IconButton, IconButtonProps } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { IconButton, IconButtonProps } from '~ui'
 
 export default {
   title: 'UI/IconButton',

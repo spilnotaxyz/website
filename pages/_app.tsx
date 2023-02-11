@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import { AppProps } from 'next/app'
-import { Container, ThemeProvider, useTheme } from '@mui/system'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import { theme, createEmotionCache, inter } from '@lib'
-import { PropsWithChildren } from 'react'
-import { Footer, Header } from '@views'
-import { Text } from '@ui'
-import { Box } from '@mui/system'
 import { MDXProvider } from '@mdx-js/react'
+import { Box, Container, ThemeProvider, useTheme } from '@mui/system'
+import { AppProps } from 'next/app'
+import Head from 'next/head'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
+import { PropsWithChildren } from 'react'
+
+import { createEmotionCache, inter, theme } from '~lib'
+import { Text } from '~ui'
+import { Footer, Header } from '~views'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()

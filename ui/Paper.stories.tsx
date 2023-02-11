@@ -1,5 +1,6 @@
-import { Story, Meta } from '@storybook/react'
-import { Paper, PaperProps, Text } from '@ui'
+import { Meta, Story } from '@storybook/react'
+
+import { Paper, PaperProps, Text } from '~ui'
 
 export default {
   title: 'UI/Paper',

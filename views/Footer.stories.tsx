@@ -1,5 +1,6 @@
-import { Story, Meta } from '@storybook/react'
-import { Footer } from '@views'
+import { Meta, Story } from '@storybook/react'
+
+import { Footer } from '~views'
 
 export default {
   title: 'views/Footer',
