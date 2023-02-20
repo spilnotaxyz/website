@@ -47,15 +47,6 @@ const config: StorybookConfig = {
         }}],
     })
 
-    console.log(config)
-    if (config.resolve)
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@lib': path.resolve(__dirname, "../lib"),
-      '@ui': path.resolve(__dirname, "../ui"),
-      '@views': path.resolve(__dirname, "../views"),
-    };
-
     return config
   }
 }

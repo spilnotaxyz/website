@@ -1,5 +1,6 @@
 import { Box, BoxProps } from '@mui/system'
-import { neueMachina, inter } from '@lib/fonts'
+
+import { inter, neueMachina } from '~lib/fonts'
 
 export type TextProps = {
   variant: 'h1' | 'h2' | 'h3' | 'big' | 'bigger' | 'body' | 'smaller'
