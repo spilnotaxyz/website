@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/spilnotaxyz/website/compare/v1.5.6...v1.5.7) (2023-02-20)
+
+
+### Bug Fixes
+
+* 🩹 actual path alias artifact fix ([279f031](https://github.com/spilnotaxyz/website/commit/279f031bba298cb845ef5ebf756f4f062c477634))
+
 ## [1.5.6](https://github.com/spilnotaxyz/website/compare/v1.5.5...v1.5.6) (2023-02-20)
 
 
