@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/spilnotaxyz/website/compare/v1.5.5...v1.5.6) (2023-02-20)
+
+
+### Bug Fixes
+
+* 🚑️ storybook fix ([72a22c1](https://github.com/spilnotaxyz/website/commit/72a22c145fb7ddad4e8c750f45c0a1facf087b47))
+
 ## [1.5.5](https://github.com/spilnotaxyz/website/compare/v1.5.4...v1.5.5) (2023-02-10)
 
 
