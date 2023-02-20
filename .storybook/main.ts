@@ -1,9 +1,9 @@
 import { StorybookConfig } from '@storybook/nextjs';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: [
-    "../@(views|ui)/*.stories.mdx",
-    "../@(views|ui)/*.stories.@(tsx)"
+    "../!(node_modules)/*.stories.@(tsx|mdx)"
   ],
   addons: [
     "@storybook/addon-links",
@@ -46,6 +46,15 @@ const config: StorybookConfig = {
            }
         }}],
     })
+
+    console.log(config)
+    if (config.resolve)
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@lib': path.resolve(__dirname, "../lib"),
+      '@ui': path.resolve(__dirname, "../ui"),
+      '@views': path.resolve(__dirname, "../views"),
+    };
 
     return config
   }
