@@ -100,10 +100,10 @@ export const Products = (rest: ProductsProps) => (
         />
       </Grid>
       <Grid order={{ lg: 0 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="March 2023" title="PoB" />
+        <RoadPoint date="April 2023" title="PoB" />
       </Grid>
       <Grid order={{ lg: 4 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="May 2023" title="RBA" />
+        <RoadPoint date="May 2023" title="CBT" />
       </Grid>
       <Grid order={{ sm: 6, lg: 2 }} xs={12} md={6} lg={3}>
         <RoadPoint date="October 2023" title="RAM" />
