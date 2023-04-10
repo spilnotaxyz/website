@@ -1,18 +1,14 @@
 import { Box, BoxProps, Unstable_Grid as Grid, useTheme } from '@mui/system'
 import merge from 'lodash.merge'
 
-import { IconButton, Paper, PaperProps, Text } from '~ui'
+import { Paper, PaperProps, Text } from '~ui'
 
 export type ProductsProps = BoxProps
 
 const PassedPoint = ({
-  description,
   title,
-  link,
   ...rest
 }: {
-  description: string
-  link: string
   title: string
 } & PaperProps) => {
   const theme = useTheme()
@@ -34,10 +30,6 @@ const PassedPoint = ({
       )}
     >
       <Text variant="h3">{title}</Text>
-      <Text mt={1.25} variant="bigger">
-        {description}
-      </Text>
-      <IconButton mt={3.75} link href={link} name="external" />
     </Paper>
   )
 }
@@ -93,23 +85,21 @@ export const Products = (rest: ProductsProps) => (
       <Grid order={{ lg: 1 }} xs={12} lg={6}>
         <PassedPoint
           title="Every Action Counts"
-          description="NFTing Card"
-          link="https://nfting.spilnota.xyz"
           py={[0, 0, 8.5, 0]}
           height={{ lg: '100%' }}
         />
       </Grid>
       <Grid order={{ lg: 0 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="April 2023" title="PoB" />
+        <RoadPoint date="May 2023" title="PoB" />
       </Grid>
       <Grid order={{ lg: 4 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="May 2023" title="CBT" />
+        <RoadPoint date="May 2023" title="AWN" />
       </Grid>
       <Grid order={{ sm: 6, lg: 2 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="October 2023" title="RAM" />
+        <RoadPoint date="Septemper 2023" title="SCP" />
       </Grid>
       <Grid order={{ sm: 6 }} xs={12} md={6} lg={3}>
-        <RoadPoint date="June 2023" title="SCP" />
+        <RoadPoint date="June 2023" title="Secret Product" />
       </Grid>
     </Grid>
   </Box>
