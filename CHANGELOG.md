@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/spilnotaxyz/website/compare/v1.6.0...v1.7.0) (2023-04-10)
+
+
+### Features
+
+* update products ([8c3a272](https://github.com/spilnotaxyz/website/commit/8c3a27296637556849f6408cfad8ac6e8b7de425))
+
 # [1.6.0](https://github.com/spilnotaxyz/website/compare/v1.5.7...v1.6.0) (2023-03-15)
 
 
