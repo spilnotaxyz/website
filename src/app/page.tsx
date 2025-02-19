@@ -25,88 +25,9 @@ export default function Home() {
           </svg>
           <h1 className="font-[family-name:var(--font-geist-mono)] text-xl font-bold">Spilnota Labs</h1>
         </div>
-        <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">Building on Ethereum, conquering the world.</p>
-        <div className="flex items-center gap-2 justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={15}
-            height={15.6}
-            viewBox="0 0 45 47"
-            fill="none"
-          >
-            <path
-              fill="url(#a)"
-              d="M9.023 20.397H0v18.59h20.297c.48-.01.947.15 1.323.453.376.302.637.728.739 1.204.06.29.09.585.091.882V47h12.404V35.654h-9.752a1.75 1.75 0 0 1-.92-.477 1.798 1.798 0 0 1-.497-.919l-.075-.358v-5.196c0-.465.048-.93.143-1.385 0-.043.02-.09.03-.136a3.205 3.205 0 0 1 1.134-1.717 3.111 3.111 0 0 1 1.93-.652h17.841V0H12.261v16.506c0 .467-.048.932-.143 1.389l-.03.136a3.204 3.204 0 0 1-1.135 1.715 3.111 3.111 0 0 1-1.93.65Z"
-            />
-            <mask
-              id="b"
-              width={45}
-              height={47}
-              x={0}
-              y={0}
-              maskUnits="userSpaceOnUse"
-              style={{
-                maskType: "luminance",
-              }}
-            >
-              <path
-                fill="#fff"
-                d="M9.023 20.397H0v18.59h20.297c.48-.01.947.15 1.323.453.376.302.637.728.739 1.204.06.29.09.585.091.882V47h12.404V35.654h-9.752a1.75 1.75 0 0 1-.92-.477 1.798 1.798 0 0 1-.497-.919l-.075-.358v-5.196c0-.465.048-.93.143-1.385 0-.043.02-.09.03-.136a3.205 3.205 0 0 1 1.134-1.717 3.111 3.111 0 0 1 1.93-.652h17.841V0H12.261v16.506c0 .467-.048.932-.143 1.389l-.03.136a3.204 3.204 0 0 1-1.135 1.715 3.111 3.111 0 0 1-1.93.65Z"
-              />
-            </mask>
-            <g mask="url(#b)">
-              <path fill="#5CFF00" d="M7.117 33.88H1.935v5.11h5.182v-5.11Z" />
-              <path fill="#00943A" d="M17.522 27.713h-5.398v5.491h5.398v-5.49Z" />
-              <path fill="#0F0" d="M22.919 18.017h-5.398v5.491h5.398v-5.49Z" />
-              <path fill="#00943A" d="M39.36 15.121h-5.398v5.491h5.397v-5.49Z" />
-              <path
-                fill="url(#c)"
-                d="M12.261 0v7.333h5.284v7.801h16.417V4.64h5.472v8.186h5.255V0H12.26Zm16.228 12.825h-5.472V7.334h5.472v5.49Z"
-              />
-              <path fill="#FFEC00" d="M12.12 22.816H7.18v4.898h4.94v-4.898Z" />
-              <path fill="#C8FF00" d="M26.519 47.017H31.3v-4.865h-4.782v4.865Z" />
-            </g>
-            <defs>
-              <linearGradient
-                id="a"
-                x1={27.128}
-                x2={15.121}
-                y1={4.666}
-                y2={48.172}
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset={0.26} stopColor="#00F068" />
-                <stop offset={0.33} stopColor="#2AE956" />
-                <stop offset={0.5} stopColor="#81DB32" />
-                <stop offset={0.64} stopColor="#C1D017" />
-                <stop offset={0.74} stopColor="#E8C906" />
-                <stop offset={0.79} stopColor="#F7C700" />
-              </linearGradient>
-              <linearGradient
-                id="c"
-                x1={4.639}
-                x2={46.206}
-                y1={-5.67}
-                y2={14.41}
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset={0.38} stopColor="#00F068" />
-                <stop offset={0.47} stopColor="#00D936" />
-                <stop offset={0.55} stopColor="#00C70F" />
-                <stop offset={0.6} stopColor="#00C000" />
-              </linearGradient>
-            </defs>
-          </svg>
-
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://beliefs.social"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="font-[family-name:var(--font-geist-mono)]">Beliefs.Social</p>
-          </a>
-        </div>
+        <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">Development agency.</p>
+        <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">Specialized in high-robust financial applications, Web3, Web Development.</p>
+        <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">From idea, to launch – contact us and let's get busy.</p>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
