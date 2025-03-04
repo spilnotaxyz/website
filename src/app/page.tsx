@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start border p-6">
+    <div className="grid grid-cols-1  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8  items-center sm:items-start border p-6 max-w-[500px]">
         <div className="flex gap-2 items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,27 @@ export default function Home() {
         <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">Specialized in high-robust financial applications, Web3, Web Development.</p>
         <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">From idea, to launch – contact us and let's get busy.</p>
       </main>
+      <div className="flex flex-col gap-8  items-center sm:items-start border p-6 max-w-[500px]">
+        <div className="flex gap-2 items-center justify-center">
+          <h1 className="font-[family-name:var(--font-geist-mono)] text-xl font-bold">We worked on</h1>
+        </div>
+        <a
+          className="flex font-[family-name:var(--font-geist-mono)] items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/wevm/frog"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">wevm/frog - Farcaster Frame library. Contributed by implementing new features, fixing bugs and general maintenance. Received a Farcaster Dev. grant in 2024.</p>
+        </a>
+        <a
+          className="flex font-[family-name:var(--font-geist-mono)] items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/dalechyn/fhub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="font-[family-name:var(--font-geist-mono)] text-md font-medium">dalechyn/fhub – Farcaster Hub library. Authors, planning to finish in Q1 2025.</p>
+        </a>
+      </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex font-[family-name:var(--font-geist-mono)] items-center gap-2 hover:underline hover:underline-offset-4"
